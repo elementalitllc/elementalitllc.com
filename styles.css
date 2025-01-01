@@ -79,12 +79,14 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 900px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 form label {
     font-weight: 600;
     color: #fff;
+    text-align: left;
 }
 
 form input,
@@ -97,6 +99,7 @@ form button {
     background: #222;
     color: #fff;
     transition: background 0.1s ease, color 0.1s ease;
+    width: 100%;
 }
 
 form input:focus,
@@ -112,6 +115,7 @@ form button {
     text-transform: uppercase;
     border: none;
     max-width: 150px;
+    align-self: center;
 }
 
 form button:hover {
