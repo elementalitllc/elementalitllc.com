@@ -4,7 +4,7 @@ body {
     padding: 0;
     color: #fff;
     background-color: #121212;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 header {
@@ -40,7 +40,7 @@ main {
     padding: 2rem;
     background: transparent;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
     color: #fff;
 }
 
