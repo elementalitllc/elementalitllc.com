@@ -40,7 +40,7 @@ main {
     padding: 2rem;
     background: transparent;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: device-width;
     color: #fff;
 }
 
@@ -79,6 +79,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    max-width: 900px;
 }
 
 form label {
@@ -95,7 +96,7 @@ form button {
     border: 1px solid #444;
     background: #222;
     color: #fff;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: background 0.1s ease, color 0.1s ease;
 }
 
 form input:focus,
@@ -110,6 +111,7 @@ form button {
     font-weight: bold;
     text-transform: uppercase;
     border: none;
+    max-width: 150px;
 }
 
 form button:hover {
