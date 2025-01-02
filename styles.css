@@ -139,9 +139,4 @@ form button:hover {
 .immediate-assistance a {
     color: #fff;
     font-weight: bold;
-    text-decoration: none;
-}
-
-.immediate-assistance a:hover {
-    text-decoration: underline;
 }
