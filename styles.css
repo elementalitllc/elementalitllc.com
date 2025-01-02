@@ -79,6 +79,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -100,7 +101,7 @@ form button {
     background: #222;
     color: #fff;
     transition: background 0.1s ease, color 0.1s ease;
-    width: 100%;
+    width: device-width;
 }
 
 form textarea {
@@ -142,6 +143,7 @@ form button:hover {
 
 @media (max-width: 600px) {
     form {
-        max-width: 100%;
+        width: 100%;
+        padding: 0 1rem;
     }
 }
