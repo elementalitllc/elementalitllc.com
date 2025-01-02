@@ -94,7 +94,7 @@ form input,
 form textarea,
 form button {
     font-size: 1rem;
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 5px;
     border: 1px solid #444;
     background: #222;
