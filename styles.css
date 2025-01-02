@@ -139,3 +139,9 @@ form button:hover {
     color: #fff;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+    form {
+        max-width: 100%;
+    }
+}
