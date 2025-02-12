@@ -930,10 +930,10 @@ height:100%
 -webkit-transition:background-color 2.5s ease-in-out;
 -ms-transition:background-color 2.5s ease-in-out;
 transition:background-color 2.5s ease-in-out;
--moz-transition-delay:.5s;
--webkit-transition-delay:.5s;
--ms-transition-delay:.5s;
-transition-delay:.5s;
+-moz-transition-delay:.75s;
+-webkit-transition-delay:.75s;
+-ms-transition-delay:.75s;
+transition-delay:.75s;
 background-image:linear-gradient(to top,#13151980,#13151980),url(../../images/overlay.png);
 background-size:auto,256px 256px;
 background-position:center,center;
@@ -1091,10 +1091,10 @@ max-width:100%
 -webkit-transition:max-height .75s ease,padding .75s ease,opacity .1s ease-in-out;
 -ms-transition:max-height .75s ease,padding .75s ease,opacity .1s ease-in-out;
 transition:max-height .75s ease,padding .75s ease,opacity .1s ease-in-out;
--moz-transition-delay:.1s;
--webkit-transition-delay:.1s;
--ms-transition-delay:.1s;
-transition-delay:.1s;
+-moz-transition-delay:.25s;
+-webkit-transition-delay:.25s;
+-ms-transition-delay:.25s;
+transition-delay:.25s;
 padding:3rem 2rem;
 max-height:40rem;
 overflow:hidden
