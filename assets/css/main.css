@@ -942,10 +942,10 @@ z-index:2
 }
 
 #bg:after {
--moz-transform:scale(1.125);
--webkit-transform:scale(1.125);
--ms-transform:scale(1.125);
-transform:scale(1.125);
+-moz-transform:none;
+-webkit-transform:none;
+-ms-transform:none;
+transform:none;
 -moz-transition:-moz-transform .1s ease-in-out,-moz-filter .1s ease-in-out;
 -webkit-transition:-webkit-transform .1s ease-in-out,-webkit-filter .1s ease-in-out;
 -ms-transition:-ms-transform .1s ease-in-out,-ms-filter .1s ease-in-out;
