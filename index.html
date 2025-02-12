@@ -99,14 +99,11 @@
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript">
 				emailjs.init('7QLya2Q0Lldwaibix');
-
 				document.getElementById('contact-form').addEventListener('submit', function(event) {
 					event.preventDefault();
-					
 					emailjs.sendForm('service_n40i71z', 'template_hetzz2e', this)
 						.then(function(response) {
 							console.log('SUCCESS!', response);
-							// Show the "Message Sent" message
 							document.getElementById("success-message").style.display = "block";
 						}, function(error) {
 							console.log('FAILED...', error);
