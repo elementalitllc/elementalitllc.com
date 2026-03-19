@@ -4,10 +4,17 @@
 		<title>Elemental IT LLC</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<script src="https://kit.fontawesome.com/d2c1f2521c.js"></script>
+		<!-- Preconnect hints for faster external resource loading -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://kit.fontawesome.com">
+		<link rel="dns-prefetch" href="https://cdn.emailjs.com">
+		<!-- Google Fonts loaded as link instead of CSS @import (non-blocking) -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap">
+		<!-- defer prevents FontAwesome from blocking page render -->
+		<script defer src="https://kit.fontawesome.com/d2c1f2521c.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -40,7 +47,8 @@
     				<!-- Vision -->
     					<article id="vision">
         					<h2 class="major">Vision</h2>
-        						<span class="image main"><img src="images/pic01.gif" alt="Vision GIF" /></span>
+        						<!-- Converted from 637KB GIF to 76KB animated WebP -->
+        						<span class="image main"><img src="images/pic01.webp" alt="Vision GIF" /></span>
         							<p>"I want to help businesses move away from the current world of software subscriptions and Windows Updates causing issues every other week. When you buy a computer you should own it".</p>
 								<p>- Aaron<br><span style="font-size: 0.9em;">Owner</span></p>
     					</article>
@@ -52,7 +60,7 @@
     								<p><strong>Streamline Your Business IT — Save Money Without Sacrificing Performance</strong></p>
     								<ul>
         							<li><strong>Hardware Support:</strong> We work with leading brands like <strong>Dell</strong>, <strong>HP</strong>, <strong>Lenovo</strong>, and more to keep your equipment running smoothly.</li>
-       								<li><strong>Software Support:</strong> From <strong>Microsoft 365</strong> and <strong>Dropbox</strong> to <strong>Sage 300</strong>, <strong>Microsoft Dynamics</strong>, <strong>SQL Server</strong>, and various <strong>ERP systems</strong> — we’ve got you covered.</li>
+       								<li><strong>Software Support:</strong> From <strong>Microsoft 365</strong> and <strong>Dropbox</strong> to <strong>Sage 300</strong>, <strong>Microsoft Dynamics</strong>, <strong>SQL Server</strong>, and various <strong>ERP systems</strong> — we've got you covered.</li>
         							<li><strong>Cut Costs, Improve Efficiency:</strong> Reduce unnecessary software subscriptions and simplify your IT infrastructure without sacrificing productivity.</li>
     								</ul>
 								<p>👉 <a href="https://elementalitllc.com/#contact" style="color: #00FFFF; text-decoration: underline;">Contact us today</a> to verify if you hardware and software are covered and help your business save money today.</p>
@@ -103,17 +111,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- EmailJS moved out of <head> to avoid render blocking -->
+			<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 			<script type="text/javascript">
-				emailjs.init('7QLya2Q0Lldwaibix');
-				document.getElementById('contact-form').addEventListener('submit', function(event) {
-					event.preventDefault();
-					emailjs.sendForm('service_n40i71z', 'template_hetzz2e', this)
-						.then(function(response) {
-							console.log('SUCCESS!', response);
-							document.getElementById("success-message").style.display = "block";
-						}, function(error) {
-							console.log('FAILED...', error);
-						});
+				document.addEventListener('DOMContentLoaded', function() {
+					emailjs.init('7QLya2Q0Lldwaibix');
+					document.getElementById('contact-form').addEventListener('submit', function(event) {
+						event.preventDefault();
+						emailjs.sendForm('service_n40i71z', 'template_hetzz2e', this)
+							.then(function(response) {
+								console.log('SUCCESS!', response);
+								document.getElementById("success-message").style.display = "block";
+							}, function(error) {
+								console.log('FAILED...', error);
+							});
+					});
 				});
 			</script>
 
