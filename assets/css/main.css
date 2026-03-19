@@ -1,6 +1,6 @@
 @import "fontawesome-all.min.css";
 
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600";
+/* Google Fonts @import removed -- loaded via <link> in index.html instead (non-blocking) */
 
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
 margin:0;
@@ -446,7 +446,7 @@ input[type=checkbox]:checked+label:before,input[type=radio]:checked+label:before
 background:#fff!important;
 border-color:#fff!important;
 color:#1b1f22;
-content:""
+content:""
 }
 
 input[type=checkbox]:focus+label:before,input[type=radio]:focus+label:before {
