@@ -100,10 +100,11 @@
 
 		<!-- Scripts -->
 			<script>
-  		  		if (window.location.hash) {
-        		window.location.replace('https://elementalitllc.com/');
-    			}
-			</script>
+				<script>
+    				if (window.location.hash || window.location.href.endsWith('#')) {
+        				window.location.replace('https://elementalitllc.com/');
+    				}
+				</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
